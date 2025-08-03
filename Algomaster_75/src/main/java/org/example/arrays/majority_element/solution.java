@@ -6,7 +6,8 @@ import java.util.HashMap;
 
 public class solution {
     public static void main(String[] args) {
-        int[] nums ={2,2,1,3,1,2,2,2};
+//        int[] nums ={2,2,1,3,1,2,2,2};
+        int[] nums ={6,5,5};
 
         int ans = MajorityNumber(nums);
 
