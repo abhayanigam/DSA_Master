@@ -60,6 +60,6 @@ public class solution {
             c++;
         }
 
-        return  frequencyStringBuilder.toString();
+        return frequencyStringBuilder.toString();
     }
 }
