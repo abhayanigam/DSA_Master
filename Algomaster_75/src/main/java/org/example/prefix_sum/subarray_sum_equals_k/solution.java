@@ -15,18 +15,6 @@ public class solution {
 //        System.out.println("The total number of subarrays in an array equal to K : " + usingTwoPointer(new int[]{1,-1,0},0));
     }
 
-    private static int[] computeSuffixSum(int[] arr) {
-        int n = arr.length;
-        int[] suffixSum = new int[n];
-
-        suffixSum[n - 1] = arr[n - 1];
-
-        for (int i = n - 2; i >= 0; i--) {
-            suffixSum[i] = suffixSum[i + 1] + arr[i];
-        }
-        return suffixSum;
-    }
-
         private static int getTotalSubarray(int[] nums, int k) {
         int count = 0;
         int currentCount = 0;
