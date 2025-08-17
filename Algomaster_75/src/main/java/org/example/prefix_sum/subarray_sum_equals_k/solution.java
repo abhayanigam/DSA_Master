@@ -5,6 +5,9 @@ import java.util.HashMap;
 
 public class solution {
     public static void main(String[] args) {
+        prefixSum(new int[]{1,1,1});
+        System.out.println();
+
         System.out.println("The total number of subarrays in an array equal to K : " + getTotalSubarray(new int[]{1,1,1},2));
         System.out.println("The total number of subarrays in an array equal to K : " + getTotalSubarray(new int[]{1,-1,0},0));
 
@@ -23,6 +26,8 @@ public class solution {
 
         for (int num : nums){
             currentCount += num;
+
+            System.out.println("The Sum of the currentCount is : " + currentCount);
 
             if (map.containsKey(currentCount -k)){
                 count+=map.get(currentCount-k);
@@ -60,5 +65,17 @@ public class solution {
         }
 
         return total;
+    }
+
+    private static void prefixSum(int[] nums){
+        int[] prefix = new int[nums.length];
+
+        prefix[0] = nums[0];
+
+        for (int i = 1; i< nums.length; i++){
+            prefix[i] = prefix[i-1] + nums[i];
+        }
+
+        System.out.println("The elements of prefix : " + Arrays.toString(prefix));
     }
 }
