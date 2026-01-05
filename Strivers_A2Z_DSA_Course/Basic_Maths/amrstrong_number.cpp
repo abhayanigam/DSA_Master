@@ -12,6 +12,7 @@ bool isArmstrongNumber(int number)
     while (number != 0)
     {
         int num = number % 10;
+
         sumNumber += pow(num, size);
 
         number /= 10;
