@@ -23,6 +23,7 @@ void detectLoopInLinkedList();
 void assign_maximum_cookies();
 void find_minimum_number_of_coins();
 void lemonade_change();
+void NMeetingsInOneRoom();
 
 #endif
 

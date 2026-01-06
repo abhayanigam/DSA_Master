@@ -23,7 +23,8 @@ int main(int argc, const char * argv[]) {
     /// Greedy Questions
 //    assign_maximum_cookies();
 //    find_minimum_number_of_coins();
-    lemonade_change();
+//    lemonade_change();
+    NMeetingsInOneRoom();
     
     
     return 0;
